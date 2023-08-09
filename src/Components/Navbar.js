@@ -4,19 +4,30 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="collapse navbar-collapse" id="navbarText">
-        <h3>Pizza Shop</h3>
-
-        <ul className="navbar-nav ml-auto ">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Home <span className="sr-only">(current)</span>
+    <nav class="navbar navbar-expand-lg navbar-light  shadow-lg p-3 mb-5 bg-body rounded">
+      <h3>Pizza Shop</h3>
+      <a class="navbar-brand" href="#"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Log In
             </a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Features
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Cart
             </a>
           </li>
         </ul>
